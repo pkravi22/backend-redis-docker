@@ -1,0 +1,54 @@
+### Get all Todos
+GET http://localhost:4000/
+
+
+### Create a new Todo
+POST http://localhost:4000/data
+Content-Type: application/json
+
+{
+  "title": "Learn data relationships",
+  "content": false
+}
+### Create a new user
+POST http://localhost:4000/api/user/register
+Content-Type: application/json
+
+{
+  "firstname":"ravi",
+  "lastname":"singh",
+  "email":"prera@gmail.com",
+  "password":"abc@123"
+
+}
+### Create a new todo
+POST http://localhost:4000/api/todo/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MDlhZGE4MWQ3MTQ4OWFjY2YwMzI0MiIsImVtYWlsIjoicHJlcmFAZ21haWwuY29tIiwiaWF0IjoxNzYyMjQ4NzgxLCJleHAiOjE3NjIyNTIzODF9.0DXNHWcgnteByZF6-gO_tzxVGINRVi51wAVXYhtU_VM
+
+{
+  "title": "hey bagga",
+  "content": "Hello this is bagga"
+}
+### update a todo
+PUT http://localhost:4000/api/todo/update/6909d2e1f454ff76be07d366
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MDlhZGE4MWQ3MTQ4OWFjY2YwMzI0MiIsImVtYWlsIjoicHJlcmFAZ21haWwuY29tIiwiaWF0IjoxNzYyMjQ4NzgxLCJleHAiOjE3NjIyNTIzODF9.0DXNHWcgnteByZF6-gO_tzxVGINRVi51wAVXYhtU_VM
+
+{
+  "title": " baggi",
+  "content":"hey abbaga nu"
+
+ 
+}
+
+### User login
+POST http://localhost:4000/api/user/login
+Content-Type: application/json
+
+{
+  
+  "email":"prera@gmail.com",
+  "password":"abc@123"
+
+}
