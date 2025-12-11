@@ -52,3 +52,12 @@ Content-Type: application/json
   "password":"abc@123"
 
 }
+### get all user
+GET http://localhost:4000/api/user
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MDlhZGE4MWQ3MTQ4OWFjY2YwMzI0MiIsImVtYWlsIjoicHJlcmFAZ21haWwuY29tIiwiaWF0IjoxNzYyMjYxMjY1LCJleHAiOjE3NjIyNjQ4NjV9.EgW8ANJGLkX8dXilotN2rouBjF79oSx2Ud1tbAS6TSw
+### get all todos
+GET http://localhost:4000/api/todo
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MDlhZGE4MWQ3MTQ4OWFjY2YwMzI0MiIsImVtYWlsIjoicHJlcmFAZ21haWwuY29tIiwiaWF0IjoxNzYyMjYxMjY1LCJleHAiOjE3NjIyNjQ4NjV9.EgW8ANJGLkX8dXilotN2rouBjF79oSx2Ud1tbAS6TSw
+

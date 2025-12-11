@@ -50,3 +50,16 @@ export const updateTodo = async (req, res) => {
     });
   }
 };
+
+export const getALlTodo = async (_, res) => {
+  try {
+    const todos = await todo.find();
+    return res.status(200).json({
+      success: true,
+      message: "todo fetched successfully",
+      todos: todos,
+    });
+  } catch (e) {
+    res.staus(500).json({ message: "INternal error" });
+  }
+};

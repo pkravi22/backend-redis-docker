@@ -80,3 +80,15 @@ export const loginUser = async (req, res) => {
     res.status(500).json({ message: "Internal server error" });
   }
 };
+
+export const getALlUser = async (_, res) => {
+  try {
+    const users = await user.find();
+    return res.status(200).json({
+      success: true,
+      users: users,
+    });
+  } catch {
+    return res.status(400).json({ success: false });
+  }
+};
